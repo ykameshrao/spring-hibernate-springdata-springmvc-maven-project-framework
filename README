@@ -1,0 +1,5 @@
+This is the wrapper framework laid out to start building Spring based Web apps with Hibernate ORM layer or Spring Data ORM powered NoSQL and Spring MVC in scala programming language. The purpose of this project is to get you started quickly in Java web app development over a tried and tested java framework: Spring.
+
+This project provides sample hibernate entities, spring data entities, akka actors to offload mail sending like jobs, models, repositories, services and controllers classes. There are also many framework level classes to help handle exceptions and errors in the project you may start developing using this.
+
+This project is released for general use under Apache License 2.0 as described here: http://www.apache.org/licenses/LICENSE-2.0
