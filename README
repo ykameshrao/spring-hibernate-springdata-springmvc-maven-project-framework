@@ -2,4 +2,21 @@ This is the wrapper framework laid out to start building Spring based Web apps w
 
 This project provides sample hibernate entities, spring data entities, akka actors to offload mail sending like jobs, models, repositories, services and controllers classes. There are also many framework level classes to help handle exceptions and errors in the project you may start developing using this.
 
+The UI for the default simple web project bundled in this framework is built using Twiiter Bootstrap, Apache Tiles, jQuery, jQuery Validation, JSPs.
+
+The frameworks strung togather supporting multiple activities in this framework layer of code are -
+Maven
+Java 1.7
+Spring 3.1.1
+Hibernate 4+
+Spring Data
+MongoDB
+Spring Service
+Spring Repository
+Akka 1.3+
+JSP 2+
+Apache Tiles 2+
+Twitter Bootstrap 2+
+Velocity for Mails
+
 This project is released for general use under Apache License 2.0 as described here: http://www.apache.org/licenses/LICENSE-2.0
