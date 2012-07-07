@@ -1,6 +1,4 @@
-Read about this project at: http://www.orangeapple.org/post/26702967725/spring-hibernate-spring-data-akka-twitter
-
-or the WIKI page of this project.
+Read about this project at: http://www.orangeapple.org/post/26702967725/spring-hibernate-spring-data-akka-twitter or the WIKI page of this project.
 
 The project consists of following parts:
 
@@ -16,11 +14,10 @@ This is the wrapper framework laid out to start building Spring based Web apps w
 
 This project provides sample hibernate entities, spring data entities, akka actors to offload mail sending like jobs, models, repositories, services and controllers classes. There are also many framework level classes to help handle exceptions and errors in the project you may start developing using this. The UI for the default simple web project bundled in this framework is built using Twiiter Bootstrap, Apache Tiles, jQuery, jQuery Validation, JSPs.
 
-
-
 I can try my best to provide with as much detail as possible here, but the best way to understand all that is provided is by reading the code. Therefore, I also provided a sample web app project with functionality to register and login a user. All the code is presented in a package structure that can be renamed as per your own choice and requirements. Enjoy!
-The frameworks strung togather supporting multiple activities in this framework layer of code are -
+
 The frameworks strung together supporting multiple activities in this framework layer of code are -
+
 Maven
 Java 1.7
 Spring 3.1.1
