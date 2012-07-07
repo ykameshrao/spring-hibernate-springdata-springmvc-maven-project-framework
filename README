@@ -20,16 +20,14 @@ This project provides sample hibernate entities, spring data entities, akka acto
 
 I can try my best to provide with as much detail as possible here, but the best way to understand all that is provided is by reading the code. Therefore, I also provided a sample web app project with functionality to register and login a user. All the code is presented in a package structure that can be renamed as per your own choice and requirements. Enjoy!
 The frameworks strung togather supporting multiple activities in this framework layer of code are -
+The frameworks strung together supporting multiple activities in this framework layer of code are -
 Maven
 Java 1.7
 Spring 3.1.1
 Hibernate 4+
 Spring Data
 MongoDB
-Spring Service
-Spring Repository
 Akka 1.3+
-JSP 2+
 Apache Tiles 2+
 Twitter Bootstrap 2+
 Velocity for Mails
