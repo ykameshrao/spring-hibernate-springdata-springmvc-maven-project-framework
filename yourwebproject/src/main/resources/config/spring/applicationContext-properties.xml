@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+    <util:properties id="mdbProps" location="file:#{systemProperties['conf.path']}/config/props/mongodb.properties" />
+    <util:properties id="dbProps" location="file:#{systemProperties['conf.path']}/config/props/database.properties" />
+    <util:properties id="logProps" location="file:#{systemProperties['conf.path']}/config/props/log4j.properties" />
+    <util:properties id="amProps" location="file:#{systemProperties['conf.path']}/config/props/api.messages.properties" />
+    <util:properties id="heProps" location="file:#{systemProperties['conf.path']}/config/props/http.error.messages.properties" />
+    <util:properties id="fProps"
+                     location="file:#{systemProperties['conf.path']}/config/props/yourwebproject.properties" />
+    <util:properties id="msgProps" location="file:#{systemProperties['conf.path']}/config/props/messages.properties" />
+    <util:properties id="mailProps" location="file:#{systemProperties['conf.path']}/config/props/mail.properties" />
+
+    <bean id="httpError" class="com.yourpackagename.yourwebproject.api.common.HttpError" />
+    <bean id="key" class="com.yourpackagename.yourwebproject.common.Key" />
+    <bean id="props" class="com.yourpackagename.yourwebproject.common.Props" />
+    <bean id="msg" class="com.yourpackagename.yourwebproject.common.Message" />
+</beans>

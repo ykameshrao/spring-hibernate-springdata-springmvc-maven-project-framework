@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                            http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        id="yourpackagename.yourwebproject" version="2.5">
+    <display-name>Your Web Project</display-name>
+
+    <!-- Spring Framework Configuration -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath:config/spring/applicationContext-properties.xml,
+            classpath:config/spring/applicationContext-aop.xml,
+            classpath:config/spring/applicationContext-jdbc.xml,
+            classpath:config/spring/applicationContext-repository.xml,
+            classpath:config/spring/applicationContext-service.xml,
+            classpath:config/spring/applicationContext-filter.xml,
+            classpath:config/spring/applicationContext-scheduler.xml,
+            classpath:config/spring/applicationContext-mail.xml,
+            classpath:config/spring/applicationContext-akka.xml
+        </param-value>
+    </context-param>
+
+
+    <!-- Filter Configurations -->
+    <!-- UTF-8 encoding filter -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>
+            org.springframework.web.filter.CharacterEncodingFilter
+        </filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- User Auth filter -->
+    <filter>
+        <filter-name>userAuthFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>userAuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <!-- Servlet Configurations -->
+    <!-- API Dispatcher -->
+    <servlet>
+        <servlet-name>yourWebProjectApiDispatcherServlet</servlet-name>
+        <servlet-class>com.yourpackagename.yourwebproject.api.dispatcher.YourWebProjectApiDispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:config/spring/api-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>yourWebProjectApiDispatcherServlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Web App Dispatcher -->
+    <servlet>
+        <servlet-name>yourWebProjectWebAppDispatcherServlet</servlet-name>
+        <servlet-class>com.yourpackagename.yourwebproject.webapp.dispatcher.YourWebProjectWebAppDispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:config/spring/webapp-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>yourWebProjectWebAppDispatcherServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Mentioning the Context Loader Listener class of Spring Framework as a listener -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+
+    <!-- Error Handling -->
+    <!-- Mapping a lot of errors to Bad Request -->
+    <error-page>
+        <error-code>400</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>402</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>406</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>407</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>409</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>410</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>411</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+    <error-page>
+        <error-code>412</error-code>
+        <location>/api/errors/400</location>
+    </error-page>
+
+
+    <!-- Other properly handled errors -->
+    <error-page>
+        <error-code>401</error-code>
+        <location>/api/errors/401</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/api/errors/404</location>
+    </error-page>
+    <error-page>
+        <error-code>405</error-code>
+        <location>/api/errors/405</location>
+    </error-page>
+    <error-page>
+        <error-code>408</error-code>
+        <location>/api/errors/408</location>
+    </error-page>
+    <error-page>
+        <error-code>415</error-code>
+        <location>/api/errors/415</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/api/errors/500</location>
+    </error-page>
+    <error-page>
+        <error-code>501</error-code>
+        <location>/api/errors/501</location>
+    </error-page>
+    <error-page>
+        <error-code>503</error-code>
+        <location>/api/errors/503</location>
+    </error-page>
+
+</web-app>

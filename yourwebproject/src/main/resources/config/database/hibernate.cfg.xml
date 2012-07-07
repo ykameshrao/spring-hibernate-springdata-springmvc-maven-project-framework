@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+        PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- The dialect to be used for the hibernate and config.database interactions -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- You will usually want to set this to true while debugging hibernate queries -->
+        <property name="hibernate.show_sql">false</property>
+
+        <!-- Map the app related object entity classes here -->
+        <mapping class="com.yourpackagename.yourwebproject.model.entity.User"/>
+    </session-factory>
+</hibernate-configuration> 

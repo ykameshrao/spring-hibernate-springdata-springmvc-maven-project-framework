@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.shiro:1.1.0_2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.shiro/1.1.0_2/org.apache.servicemix.bundles.shiro-1.1.0_2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.shiro/1.1.0_2/org.apache.servicemix.bundles.shiro-1.1.0_2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/servicemix/bundles/org.apache.servicemix.bundles.shiro/1.1.0_2/org.apache.servicemix.bundles.shiro-1.1.0_2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

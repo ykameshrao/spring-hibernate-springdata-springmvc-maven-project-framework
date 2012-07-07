@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-deps/common-deps.iml" filepath="$PROJECT_DIR$/common-deps/common-deps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-hibernate-springdata-springmvc-maven-project-framework.iml" filepath="$PROJECT_DIR$/spring-hibernate-springdata-springmvc-maven-project-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yourwebproject/yourwebproject.iml" filepath="$PROJECT_DIR$/yourwebproject/yourwebproject.iml" />
+    </modules>
+  </component>
+</project>
+

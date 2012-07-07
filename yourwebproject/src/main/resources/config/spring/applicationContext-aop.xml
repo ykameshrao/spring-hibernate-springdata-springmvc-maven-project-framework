@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<!-- Adding the Intercepter - ThrowsAdvice to handle exceptions on system -->
+	<bean id="exceptionHandlerAdvice" class="com.yourpackagename.framework.aop.ExceptionHandlerAdvice" >
+	</bean>
+
+	<!-- Applying the advice to the objects in the system -->
+	<bean id="systemExceptionHandlerBeanFactoryProxyCreator"
+          class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" >
+		<property name="beanNames">
+			<list>
+				<value>*Dao</value>
+				<value>*DAO</value>
+				<value>*Service</value>
+				<value>*Manager</value>
+				<value>*Controller</value>
+				<value>*Impl</value>
+			</list>
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>exceptionHandlerAdvice</value>
+			</list>
+		</property>
+	</bean>
+</beans>

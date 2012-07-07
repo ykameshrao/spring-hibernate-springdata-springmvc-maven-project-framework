@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-hibernate-springdata-springmvc-maven-project-framework</artifactId>
+        <groupId>com.yourpackagename</groupId>
+        <version>0.1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>yourwebproject</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <mavenJetty.version>8.1.0.RC5</mavenJetty.version>
+        <mavenCompiler.version>2.3.2</mavenCompiler.version>
+    </properties>
+
+    <repositories>
+        <!-- Sonatype Releases -->
+        <repository>
+            <id>sonatype-releases</id>
+            <name>Sonatype Releases</name>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+
+        <!-- Spring Releases -->
+        <repository>
+            <id>spring-release</id>
+            <name>Spring Maven Release Repository</name>
+            <url>http://repo.springsource.org/libs-release</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- yourpackagename dependecies -->
+        <dependency>
+            <artifactId>common-deps</artifactId>
+            <groupId>com.yourpackagename</groupId>
+            <version>${project.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Parent Project Dependencies -->
+        <dependency>
+            <artifactId>commons</artifactId>
+            <groupId>com.yourpackagename</groupId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>framework</artifactId>
+            <groupId>com.yourpackagename</groupId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${mavenJetty.version}</version>
+                <configuration>
+                    <stopKey>stopIt</stopKey>
+                    <stopPort>9191</stopPort>
+                    <reload>automatic</reload>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+
+footer {
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #eee;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -73px;  /* originally 63px/or chosen height, added 40 px more for top padding */
+}
+
+.push {
+    height: 73px; /* originally 63px/or chosen height, added 40 px more for top padding */
+}
+
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+    padding-top: 70px; /* originally 60px, added 40 px more for top padding */
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base" template="/WEB-INF/views/layout/web.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.web.jsp" />
+        <put-attribute name="message" value="/WEB-INF/views/common/message.web.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.web.jsp" />
+	</definition>
+
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="Your Web Project" />
+		<put-attribute name="content" value="/WEB-INF/views/web/home.web.jsp" />
+	</definition>
+
+    <definition name="userRegistration" extends="base">
+   		<put-attribute name="title" value="Register" />
+   		<put-attribute name="content" value="/WEB-INF/views/web/userRegistration.web.jsp" />
+   	</definition>
+
+    <definition name="dashboard" extends="base">
+   		<put-attribute name="title" value="Dashboard" />
+   		<put-attribute name="content" value="/WEB-INF/views/web/dashboard.web.jsp" />
+   	</definition>
+
+    <definition name="error" extends="base">
+   		<put-attribute name="title" value="Error" />
+   		<put-attribute name="content" value="/WEB-INF/views/web/error.web.jsp" />
+   	</definition>
+</tiles-definitions>
