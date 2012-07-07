@@ -1,9 +1,24 @@
-This is the wrapper framework laid out to start building Spring based Web apps with Hibernate ORM layer or Spring Data ORM powered NoSQL and Spring MVC in java programming language. The purpose of this project is to get you started quickly in Java web app development over a tried and tested java framework: Spring.
+Read about this project at: http://www.orangeapple.org/post/26702967725/spring-hibernate-spring-data-akka-twitter
 
-This project provides sample hibernate entities, spring data entities, akka actors to offload mail sending like jobs, models, repositories, services and controllers classes. There are also many framework level classes to help handle exceptions and errors in the project you may start developing using this.
+or the WIKI page of this project.
 
-The UI for the default simple web project bundled in this framework is built using Twiiter Bootstrap, Apache Tiles, jQuery, jQuery Validation, JSPs.
+The project consists of following parts:
 
+1) Commons-Deps: Dependencies declared as a single pom file to easily manage the project dependencies. It is upto personal choice of users to still continue have it this way or go with their own chosen method to manage dependencies in maven pom.
+
+2) Commons: A lot of common code snippets are provided as part of commons jar module to help send mails using gmail, java mail, utf8 encoding, JCS cache managers, session managers, random string, etc.
+
+3) Framework: This part of the code base includes JPA and Spring Data Entities, JPA and Spring Data Repositories, Services which are built using Java Generics to help provide the CRUD actions on these Entities when users build their own domain specific entities, repositories and services extending the ones provided here. It also contains, API and Web App Controllers providing basic functionality again for people interested in building their own Spring MVC controllers using these. Also, contained here are validators, exceptions, AOP based exception handlers.
+
+4) Your Own Web App Code: This part of the code provides a bootstrapped web project with API and Web UI using the best practices I picked across time to do things using the third party frameworks, libraries I have chosen here. The API parts is configured to accept and generate both XML and JSON request and response formats. Akka is also configured here to present the method in which it can be used to offload activities from your Spring MVC controllers (Servlets). Here it is programmed to offload the task of sending emails.
+
+This is the wrapper framework laid out to start building Spring based Web apps with Hibernate ORM layer or Spring Data ORM powered NoSQL and Spring MVC in Java programming language. The purpose of this project is to get you started quickly in Java web app development over a widely used and tested Java web development infrastructure. 
+
+This project provides sample hibernate entities, spring data entities, akka actors to offload mail sending like jobs, models, repositories, services and controllers classes. There are also many framework level classes to help handle exceptions and errors in the project you may start developing using this. The UI for the default simple web project bundled in this framework is built using Twiiter Bootstrap, Apache Tiles, jQuery, jQuery Validation, JSPs.
+
+
+
+I can try my best to provide with as much detail as possible here, but the best way to understand all that is provided is by reading the code. Therefore, I also provided a sample web app project with functionality to register and login a user. All the code is presented in a package structure that can be renamed as per your own choice and requirements. Enjoy!
 The frameworks strung togather supporting multiple activities in this framework layer of code are -
 Maven
 Java 1.7
