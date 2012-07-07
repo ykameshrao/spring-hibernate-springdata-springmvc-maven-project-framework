@@ -18,5 +18,7 @@ JSP 2+
 Apache Tiles 2+
 Twitter Bootstrap 2+
 Velocity for Mails
+BootSwatch
+jQuery
 
 This project is released for general use under Apache License 2.0 as described here: http://www.apache.org/licenses/LICENSE-2.0
