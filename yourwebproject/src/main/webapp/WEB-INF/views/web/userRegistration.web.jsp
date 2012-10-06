@@ -103,6 +103,7 @@
 
                 <input class="btn btn-primary btn-large" type="submit" value="Register"/>
                 <a href="${pageContext.request.contextPath}/home" class="btn btn-large">Cancel</a>
+
             </div>
         </fieldset>
     </form>
