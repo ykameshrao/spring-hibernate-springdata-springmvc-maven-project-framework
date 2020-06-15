@@ -50,7 +50,7 @@
         <javaMail.version>1.4.4</javaMail.version>
 
         <apacheDigester.version>3.2</apacheDigester.version>
-        <apacheCollections.version>3.2.1</apacheCollections.version>
+        <apacheCollections.version>3.2.2</apacheCollections.version>
         <apacheHttp.version>3.1</apacheHttp.version>
         <apacheDbcp.version>1.4</apacheDbcp.version>
         <apacheFileUpload.version>1.2.2</apacheFileUpload.version>
