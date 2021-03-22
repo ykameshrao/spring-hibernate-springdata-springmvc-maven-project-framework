@@ -63,7 +63,7 @@
 
         <cglib.version>2.2.2</cglib.version>
         <jodaTime.version>2.0</jodaTime.version>
-        <xstream.version>1.4.2</xstream.version>
+        <xstream.version>1.4.16</xstream.version>
         <lombok.version>0.10.6</lombok.version>
         <castor.version>1.3.1</castor.version>
         <xerces.version>2.10.0</xerces.version>
