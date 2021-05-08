@@ -57,7 +57,7 @@
         <apacheIo.version>2.1</apacheIo.version>
         <apacheTiles.version>2.2.2</apacheTiles.version>
         <apacheJcs.version>1.3</apacheJcs.version>
-        <apacheShiro.version>1.2.0</apacheShiro.version>
+        <apacheShiro.version>1.6.0</apacheShiro.version>
         <apacheMail.version>1.1</apacheMail.version>
         <apacheMath.version>1.2</apacheMath.version>
 
