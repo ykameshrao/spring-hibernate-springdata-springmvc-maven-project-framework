@@ -38,7 +38,7 @@
         <hibernateValidator.version>4.2.0.Final</hibernateValidator.version>
         <hibernateValidatorLegacy.version>4.0.2.GA</hibernateValidatorLegacy.version>
 
-        <mysql.version>5.1.18</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <c3p0.version>0.9.1.2</c3p0.version>
         <mongoJava.version>2.7.3</mongoJava.version>
 
