@@ -53,7 +53,7 @@
         <apacheCollections.version>3.2.1</apacheCollections.version>
         <apacheHttp.version>3.1</apacheHttp.version>
         <apacheDbcp.version>1.4</apacheDbcp.version>
-        <apacheFileUpload.version>1.2.2</apacheFileUpload.version>
+        <apacheFileUpload.version>1.3.3</apacheFileUpload.version>
         <apacheIo.version>2.1</apacheIo.version>
         <apacheTiles.version>2.2.2</apacheTiles.version>
         <apacheJcs.version>1.3</apacheJcs.version>
