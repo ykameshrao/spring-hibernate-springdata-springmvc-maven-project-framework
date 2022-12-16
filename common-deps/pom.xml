@@ -22,7 +22,7 @@
         <velocity.version>1.7</velocity.version>
         <freemarker.version>2.3.19</freemarker.version>
 
-        <spring.version>3.1.1.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <quartz.version>2.1.3</quartz.version>
         <camel.version>2.9.1</camel.version>
         <activemq.version>5.5.1</activemq.version>
